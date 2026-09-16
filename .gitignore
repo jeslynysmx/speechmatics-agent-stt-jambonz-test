@@ -1,0 +1,10 @@
+# Captures from your own runs — these can carry call identifiers and account
+# ids when taken through a telephony stack. The checked-in control under
+# samples/ is engine-only and carries none, so it is allowed back in.
+*.raw.jsonl
+*.log.txt
+!samples/*.raw.jsonl
+
+__pycache__/
+*.pyc
+.env

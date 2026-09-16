@@ -1,0 +1,197 @@
+{"received_at": "2026-09-16T18:30:38.876304", "message": {"message": "Info", "type": "concurrent_session_usage", "reason": "1 concurrent sessions active out of quota 10", "usage": 1, "quota": 10, "growth_rate_1m": 1, "growth_rate_1m_limit": 200, "growth_rate_avg_5m": 0, "growth_rate_avg_5m_limit": 40, "burst_rate": 1, "burst_limit": 200, "sustained_rate": 0, "sustained_limit": 40, "rate_limiting_enabled": false, "last_updated": "2026-09-16T17:30:38Z", "region": "eu"}}
+{"received_at": "2026-09-16T18:30:38.882429", "message": {"message": "Warning", "reason": "Field transcription_config.punctuation_overrides is not valid config for this session and was ignored"}}
+{"received_at": "2026-09-16T18:30:38.889679", "message": {"message": "RecognitionStarted", "orchestrator_version": "2026.09.07+1f5eba77f2+16.0.0", "id": "3cb56590-b51b-4a86-9e8a-52bfe92bbacc", "language_pack_info": {"adapted": false, "itn": true, "language_description": "Spanish", "word_delimiter": " ", "writing_direction": "left-to-right"}}}
+{"received_at": "2026-09-16T18:30:38.889723", "message": {"message": "Info", "type": "recognition_quality", "reason": "Running recognition using a broadcast model quality.", "quality": "broadcast"}}
+{"received_at": "2026-09-16T18:30:39.858382", "message": {"message": "AudioAdded", "seq_no": 1}}
+{"received_at": "2026-09-16T18:30:39.858408", "message": {"message": "AudioAdded", "seq_no": 2}}
+{"received_at": "2026-09-16T18:30:39.858415", "message": {"message": "SpeechStarted", "metadata": {"start_time": 0.16}}}
+{"received_at": "2026-09-16T18:30:39.858472", "message": {"message": "AudioAdded", "seq_no": 3}}
+{"received_at": "2026-09-16T18:30:39.858476", "message": {"message": "AudioAdded", "seq_no": 4}}
+{"received_at": "2026-09-16T18:30:39.858479", "message": {"message": "AudioAdded", "seq_no": 5}}
+{"received_at": "2026-09-16T18:30:39.858482", "message": {"message": "AudioAdded", "seq_no": 6}}
+{"received_at": "2026-09-16T18:30:39.858485", "message": {"message": "AudioAdded", "seq_no": 7}}
+{"received_at": "2026-09-16T18:30:40.113999", "message": {"message": "AudioAdded", "seq_no": 8}}
+{"received_at": "2026-09-16T18:30:40.242093", "message": {"message": "AudioAdded", "seq_no": 9}}
+{"received_at": "2026-09-16T18:30:40.242110", "message": {"message": "AudioAdded", "seq_no": 10}}
+{"received_at": "2026-09-16T18:30:40.242113", "message": {"message": "AudioAdded", "seq_no": 11}}
+{"received_at": "2026-09-16T18:30:40.498166", "message": {"message": "AudioAdded", "seq_no": 12}}
+{"received_at": "2026-09-16T18:30:40.626351", "message": {"message": "AudioAdded", "seq_no": 13}}
+{"received_at": "2026-09-16T18:30:40.626365", "message": {"message": "AudioAdded", "seq_no": 14}}
+{"received_at": "2026-09-16T18:30:40.626369", "message": {"message": "AudioAdded", "seq_no": 15}}
+{"received_at": "2026-09-16T18:30:40.882144", "message": {"message": "AudioAdded", "seq_no": 16}}
+{"received_at": "2026-09-16T18:30:40.882166", "message": {"message": "SpeechEnded", "metadata": {"end_time": 1.54}}}
+{"received_at": "2026-09-16T18:30:40.882208", "message": {"message": "SpeechStarted", "metadata": {"start_time": 1.6}}}
+{"received_at": "2026-09-16T18:30:40.882218", "message": {"message": "AudioAdded", "seq_no": 17}}
+{"received_at": "2026-09-16T18:30:41.138589", "message": {"message": "AudioAdded", "seq_no": 18}}
+{"received_at": "2026-09-16T18:30:41.138650", "message": {"message": "AudioAdded", "seq_no": 19}}
+{"received_at": "2026-09-16T18:30:41.138661", "message": {"message": "AudioAdded", "seq_no": 20}}
+{"received_at": "2026-09-16T18:30:41.393979", "message": {"message": "AudioAdded", "seq_no": 21}}
+{"received_at": "2026-09-16T18:30:41.522087", "message": {"message": "AudioAdded", "seq_no": 22}}
+{"received_at": "2026-09-16T18:30:41.522101", "message": {"message": "AudioAdded", "seq_no": 23}}
+{"received_at": "2026-09-16T18:30:41.522107", "message": {"message": "SpeechEnded", "metadata": {"end_time": 2.21}}}
+{"received_at": "2026-09-16T18:30:41.522142", "message": {"message": "StartOfTurn", "metadata": {"start_time": 0.0}}}
+{"received_at": "2026-09-16T18:30:41.522153", "message": {"message": "AudioAdded", "seq_no": 24}}
+{"received_at": "2026-09-16T18:30:41.778521", "message": {"message": "AudioAdded", "seq_no": 25}}
+{"received_at": "2026-09-16T18:30:41.778562", "message": {"message": "AddSegment", "segment": {"transcript": "Quiero una mesa para hoy, por favor.", "speaker": "S1"}, "metadata": {"start_time": 0.0, "end_time": 2.32}}}
+{"received_at": "2026-09-16T18:30:41.778637", "message": {"message": "EndOfTurn", "metadata": {"end_time": 2.32}}}
+{"received_at": "2026-09-16T18:30:41.778651", "message": {"message": "AudioAdded", "seq_no": 26}}
+{"received_at": "2026-09-16T18:30:42.033952", "message": {"message": "AudioAdded", "seq_no": 27}}
+{"received_at": "2026-09-16T18:30:42.033967", "message": {"message": "AudioAdded", "seq_no": 28}}
+{"received_at": "2026-09-16T18:30:42.033993", "message": {"message": "SpeechStarted", "metadata": {"start_time": 2.78}}}
+{"received_at": "2026-09-16T18:30:42.034027", "message": {"message": "AudioAdded", "seq_no": 29}}
+{"received_at": "2026-09-16T18:30:42.290153", "message": {"message": "AudioAdded", "seq_no": 30}}
+{"received_at": "2026-09-16T18:30:42.418230", "message": {"message": "AudioAdded", "seq_no": 31}}
+{"received_at": "2026-09-16T18:30:42.418246", "message": {"message": "AudioAdded", "seq_no": 32}}
+{"received_at": "2026-09-16T18:30:42.418251", "message": {"message": "AudioAdded", "seq_no": 33}}
+{"received_at": "2026-09-16T18:30:42.674147", "message": {"message": "AudioAdded", "seq_no": 34}}
+{"received_at": "2026-09-16T18:30:42.674189", "message": {"message": "AudioAdded", "seq_no": 35}}
+{"received_at": "2026-09-16T18:30:42.674206", "message": {"message": "SpeechEnded", "metadata": {"end_time": 3.46}}}
+{"received_at": "2026-09-16T18:30:42.930306", "message": {"message": "AudioAdded", "seq_no": 36}}
+{"received_at": "2026-09-16T18:30:42.930320", "message": {"message": "AudioAdded", "seq_no": 37}}
+{"received_at": "2026-09-16T18:30:42.930326", "message": {"message": "StartOfTurn", "metadata": {"start_time": 2.58}}}
+{"received_at": "2026-09-16T18:30:42.930361", "message": {"message": "AddSegment", "segment": {"transcript": "A las ocho.", "speaker": "S1"}, "metadata": {"start_time": 2.58, "end_time": 3.42}}}
+{"received_at": "2026-09-16T18:30:42.930388", "message": {"message": "EndOfTurn", "metadata": {"end_time": 3.42}}}
+{"received_at": "2026-09-16T18:30:42.930399", "message": {"message": "AudioAdded", "seq_no": 38}}
+{"received_at": "2026-09-16T18:30:43.186304", "message": {"message": "AudioAdded", "seq_no": 39}}
+{"received_at": "2026-09-16T18:30:43.186323", "message": {"message": "SpeechStarted", "metadata": {"start_time": 3.87}}}
+{"received_at": "2026-09-16T18:30:43.186358", "message": {"message": "AudioAdded", "seq_no": 40}}
+{"received_at": "2026-09-16T18:30:43.442182", "message": {"message": "AudioAdded", "seq_no": 41}}
+{"received_at": "2026-09-16T18:30:43.442198", "message": {"message": "AudioAdded", "seq_no": 42}}
+{"received_at": "2026-09-16T18:30:43.442201", "message": {"message": "AudioAdded", "seq_no": 43}}
+{"received_at": "2026-09-16T18:30:43.698501", "message": {"message": "AudioAdded", "seq_no": 44}}
+{"received_at": "2026-09-16T18:30:43.826662", "message": {"message": "AudioAdded", "seq_no": 45}}
+{"received_at": "2026-09-16T18:30:43.826675", "message": {"message": "AudioAdded", "seq_no": 46}}
+{"received_at": "2026-09-16T18:30:43.826679", "message": {"message": "AudioAdded", "seq_no": 47}}
+{"received_at": "2026-09-16T18:30:44.082963", "message": {"message": "AudioAdded", "seq_no": 48}}
+{"received_at": "2026-09-16T18:30:44.082997", "message": {"message": "AudioAdded", "seq_no": 49}}
+{"received_at": "2026-09-16T18:30:44.083010", "message": {"message": "SpeechEnded", "metadata": {"end_time": 4.9}}}
+{"received_at": "2026-09-16T18:30:44.338052", "message": {"message": "AudioAdded", "seq_no": 50}}
+{"received_at": "2026-09-16T18:30:44.338067", "message": {"message": "AudioAdded", "seq_no": 51}}
+{"received_at": "2026-09-16T18:30:44.338082", "message": {"message": "SpeechStarted", "metadata": {"start_time": 5.02}}}
+{"received_at": "2026-09-16T18:30:44.338115", "message": {"message": "AudioAdded", "seq_no": 52}}
+{"received_at": "2026-09-16T18:30:44.594978", "message": {"message": "AudioAdded", "seq_no": 53}}
+{"received_at": "2026-09-16T18:30:44.722296", "message": {"message": "AudioAdded", "seq_no": 54}}
+{"received_at": "2026-09-16T18:30:44.722313", "message": {"message": "AudioAdded", "seq_no": 55}}
+{"received_at": "2026-09-16T18:30:44.722318", "message": {"message": "AudioAdded", "seq_no": 56}}
+{"received_at": "2026-09-16T18:30:44.978292", "message": {"message": "AudioAdded", "seq_no": 57}}
+{"received_at": "2026-09-16T18:30:44.978314", "message": {"message": "SpeechEnded", "metadata": {"end_time": 5.66}}}
+{"received_at": "2026-09-16T18:30:44.978357", "message": {"message": "AudioAdded", "seq_no": 58}}
+{"received_at": "2026-09-16T18:30:45.234449", "message": {"message": "AudioAdded", "seq_no": 59}}
+{"received_at": "2026-09-16T18:30:45.234476", "message": {"message": "AudioAdded", "seq_no": 60}}
+{"received_at": "2026-09-16T18:30:45.234487", "message": {"message": "StartOfTurn", "metadata": {"start_time": 3.74}}}
+{"received_at": "2026-09-16T18:30:45.234550", "message": {"message": "AddSegment", "segment": {"transcript": "Seremos 4,1 bebé.", "speaker": "S1"}, "metadata": {"start_time": 3.74, "end_time": 5.82}}}
+{"received_at": "2026-09-16T18:30:45.234581", "message": {"message": "EndOfTurn", "metadata": {"end_time": 5.82}}}
+{"received_at": "2026-09-16T18:30:45.234616", "message": {"message": "AudioAdded", "seq_no": 61}}
+{"received_at": "2026-09-16T18:30:45.490266", "message": {"message": "AudioAdded", "seq_no": 62}}
+{"received_at": "2026-09-16T18:30:45.618090", "message": {"message": "AudioAdded", "seq_no": 63}}
+{"received_at": "2026-09-16T18:30:45.618104", "message": {"message": "AudioAdded", "seq_no": 64}}
+{"received_at": "2026-09-16T18:30:45.618120", "message": {"message": "AudioAdded", "seq_no": 65}}
+{"received_at": "2026-09-16T18:30:45.618125", "message": {"message": "SpeechStarted", "metadata": {"start_time": 6.46}}}
+{"received_at": "2026-09-16T18:30:45.874784", "message": {"message": "AudioAdded", "seq_no": 66}}
+{"received_at": "2026-09-16T18:30:45.874818", "message": {"message": "AudioAdded", "seq_no": 67}}
+{"received_at": "2026-09-16T18:30:46.130889", "message": {"message": "AudioAdded", "seq_no": 68}}
+{"received_at": "2026-09-16T18:30:46.130922", "message": {"message": "AudioAdded", "seq_no": 69}}
+{"received_at": "2026-09-16T18:30:46.130937", "message": {"message": "SpeechEnded", "metadata": {"end_time": 6.88}}}
+{"received_at": "2026-09-16T18:30:46.131001", "message": {"message": "AudioAdded", "seq_no": 70}}
+{"received_at": "2026-09-16T18:30:46.387461", "message": {"message": "AudioAdded", "seq_no": 71}}
+{"received_at": "2026-09-16T18:30:46.387482", "message": {"message": "AudioAdded", "seq_no": 72}}
+{"received_at": "2026-09-16T18:30:46.387490", "message": {"message": "SpeechStarted", "metadata": {"start_time": 7.17}}}
+{"received_at": "2026-09-16T18:30:46.387549", "message": {"message": "StartOfTurn", "metadata": {"start_time": 6.3}}}
+{"received_at": "2026-09-16T18:30:46.387566", "message": {"message": "AddSegment", "segment": {"transcript": "Si.", "speaker": "S1"}, "metadata": {"start_time": 6.3, "end_time": 6.9}}}
+{"received_at": "2026-09-16T18:30:46.387583", "message": {"message": "EndOfTurn", "metadata": {"end_time": 6.9}}}
+{"received_at": "2026-09-16T18:30:46.642868", "message": {"message": "AudioAdded", "seq_no": 73}}
+{"received_at": "2026-09-16T18:30:46.642901", "message": {"message": "AudioAdded", "seq_no": 74}}
+{"received_at": "2026-09-16T18:30:46.642911", "message": {"message": "AudioAdded", "seq_no": 75}}
+{"received_at": "2026-09-16T18:30:46.898966", "message": {"message": "AudioAdded", "seq_no": 76}}
+{"received_at": "2026-09-16T18:30:47.026249", "message": {"message": "AudioAdded", "seq_no": 77}}
+{"received_at": "2026-09-16T18:30:47.026263", "message": {"message": "AudioAdded", "seq_no": 78}}
+{"received_at": "2026-09-16T18:30:47.026266", "message": {"message": "AudioAdded", "seq_no": 79}}
+{"received_at": "2026-09-16T18:30:47.282534", "message": {"message": "AudioAdded", "seq_no": 80}}
+{"received_at": "2026-09-16T18:30:47.282554", "message": {"message": "AudioAdded", "seq_no": 81}}
+{"received_at": "2026-09-16T18:30:47.538145", "message": {"message": "AudioAdded", "seq_no": 82}}
+{"received_at": "2026-09-16T18:30:47.538168", "message": {"message": "AudioAdded", "seq_no": 83}}
+{"received_at": "2026-09-16T18:30:47.538173", "message": {"message": "AudioAdded", "seq_no": 84}}
+{"received_at": "2026-09-16T18:30:47.794087", "message": {"message": "AudioAdded", "seq_no": 85}}
+{"received_at": "2026-09-16T18:30:47.922272", "message": {"message": "AudioAdded", "seq_no": 86}}
+{"received_at": "2026-09-16T18:30:47.922285", "message": {"message": "AudioAdded", "seq_no": 87}}
+{"received_at": "2026-09-16T18:30:47.922301", "message": {"message": "AudioAdded", "seq_no": 88}}
+{"received_at": "2026-09-16T18:30:48.178599", "message": {"message": "AudioAdded", "seq_no": 89}}
+{"received_at": "2026-09-16T18:30:48.178627", "message": {"message": "AudioAdded", "seq_no": 90}}
+{"received_at": "2026-09-16T18:30:48.178639", "message": {"message": "StartOfTurn", "metadata": {"start_time": 7.02}}}
+{"received_at": "2026-09-16T18:30:48.434525", "message": {"message": "AudioAdded", "seq_no": 91}}
+{"received_at": "2026-09-16T18:30:48.434557", "message": {"message": "AudioAdded", "seq_no": 92}}
+{"received_at": "2026-09-16T18:30:48.434566", "message": {"message": "AudioAdded", "seq_no": 93}}
+{"received_at": "2026-09-16T18:30:48.690601", "message": {"message": "AudioAdded", "seq_no": 94}}
+{"received_at": "2026-09-16T18:30:48.818654", "message": {"message": "AudioAdded", "seq_no": 95}}
+{"received_at": "2026-09-16T18:30:48.818687", "message": {"message": "SpeechEnded", "metadata": {"end_time": 9.41}}}
+{"received_at": "2026-09-16T18:30:48.818757", "message": {"message": "AudioAdded", "seq_no": 96}}
+{"received_at": "2026-09-16T18:30:48.818766", "message": {"message": "AudioAdded", "seq_no": 97}}
+{"received_at": "2026-09-16T18:30:48.818778", "message": {"message": "AddSegment", "segment": {"transcript": "Hay un vegano y un intolerante a la lactosa.", "speaker": "S1"}, "metadata": {"start_time": 7.02, "end_time": 9.5}}}
+{"received_at": "2026-09-16T18:30:48.818837", "message": {"message": "EndOfTurn", "metadata": {"end_time": 9.5}}}
+{"received_at": "2026-09-16T18:30:49.074847", "message": {"message": "AudioAdded", "seq_no": 98}}
+{"received_at": "2026-09-16T18:30:49.074887", "message": {"message": "SpeechStarted", "metadata": {"start_time": 9.73}}}
+{"received_at": "2026-09-16T18:30:49.074955", "message": {"message": "AudioAdded", "seq_no": 99}}
+{"received_at": "2026-09-16T18:30:49.330731", "message": {"message": "AudioAdded", "seq_no": 100}}
+{"received_at": "2026-09-16T18:30:49.330755", "message": {"message": "AudioAdded", "seq_no": 101}}
+{"received_at": "2026-09-16T18:30:49.330763", "message": {"message": "AudioAdded", "seq_no": 102}}
+{"received_at": "2026-09-16T18:30:49.586789", "message": {"message": "AudioAdded", "seq_no": 103}}
+{"received_at": "2026-09-16T18:30:49.586832", "message": {"message": "AudioAdded", "seq_no": 104}}
+{"received_at": "2026-09-16T18:30:49.841952", "message": {"message": "AudioAdded", "seq_no": 105}}
+{"received_at": "2026-09-16T18:30:49.841969", "message": {"message": "AudioAdded", "seq_no": 106}}
+{"received_at": "2026-09-16T18:30:49.841972", "message": {"message": "AudioAdded", "seq_no": 107}}
+{"received_at": "2026-09-16T18:30:50.098163", "message": {"message": "AudioAdded", "seq_no": 108}}
+{"received_at": "2026-09-16T18:30:50.226924", "message": {"message": "AudioAdded", "seq_no": 109}}
+{"received_at": "2026-09-16T18:30:50.226950", "message": {"message": "AudioAdded", "seq_no": 110}}
+{"received_at": "2026-09-16T18:30:50.226980", "message": {"message": "AudioAdded", "seq_no": 111}}
+{"received_at": "2026-09-16T18:30:50.482366", "message": {"message": "AudioAdded", "seq_no": 112}}
+{"received_at": "2026-09-16T18:30:50.482389", "message": {"message": "AudioAdded", "seq_no": 113}}
+{"received_at": "2026-09-16T18:30:50.482413", "message": {"message": "SpeechEnded", "metadata": {"end_time": 11.23}}}
+{"received_at": "2026-09-16T18:30:50.738660", "message": {"message": "AudioAdded", "seq_no": 114}}
+{"received_at": "2026-09-16T18:30:50.738687", "message": {"message": "AudioAdded", "seq_no": 115}}
+{"received_at": "2026-09-16T18:30:50.738698", "message": {"message": "StartOfTurn", "metadata": {"start_time": 9.58}}}
+{"received_at": "2026-09-16T18:30:50.738756", "message": {"message": "AddSegment", "segment": {"transcript": "A nombre de Serge Prieto.", "speaker": "S1"}, "metadata": {"start_time": 9.58, "end_time": 11.38}}}
+{"received_at": "2026-09-16T18:30:50.738778", "message": {"message": "EndOfTurn", "metadata": {"end_time": 11.38}}}
+{"received_at": "2026-09-16T18:30:50.738794", "message": {"message": "AudioAdded", "seq_no": 116}}
+{"received_at": "2026-09-16T18:30:50.994673", "message": {"message": "AudioAdded", "seq_no": 117}}
+{"received_at": "2026-09-16T18:30:51.122613", "message": {"message": "AudioAdded", "seq_no": 118}}
+{"received_at": "2026-09-16T18:30:51.122669", "message": {"message": "SpeechStarted", "metadata": {"start_time": 11.78}}}
+{"received_at": "2026-09-16T18:30:51.122743", "message": {"message": "AudioAdded", "seq_no": 119}}
+{"received_at": "2026-09-16T18:30:51.122752", "message": {"message": "AudioAdded", "seq_no": 120}}
+{"received_at": "2026-09-16T18:30:51.378439", "message": {"message": "AudioAdded", "seq_no": 121}}
+{"received_at": "2026-09-16T18:30:51.378486", "message": {"message": "AudioAdded", "seq_no": 122}}
+{"received_at": "2026-09-16T18:30:51.634087", "message": {"message": "AudioAdded", "seq_no": 123}}
+{"received_at": "2026-09-16T18:30:51.634104", "message": {"message": "AudioAdded", "seq_no": 124}}
+{"received_at": "2026-09-16T18:30:51.634108", "message": {"message": "AudioAdded", "seq_no": 125}}
+{"received_at": "2026-09-16T18:30:51.890464", "message": {"message": "AudioAdded", "seq_no": 126}}
+{"received_at": "2026-09-16T18:30:52.017982", "message": {"message": "AudioAdded", "seq_no": 127}}
+{"received_at": "2026-09-16T18:30:52.017998", "message": {"message": "SpeechEnded", "metadata": {"end_time": 12.67}}}
+{"received_at": "2026-09-16T18:30:52.018029", "message": {"message": "AudioAdded", "seq_no": 128}}
+{"received_at": "2026-09-16T18:30:52.018033", "message": {"message": "AudioAdded", "seq_no": 129}}
+{"received_at": "2026-09-16T18:30:52.018036", "message": {"message": "SpeechStarted", "metadata": {"start_time": 12.9}}}
+{"received_at": "2026-09-16T18:30:52.274586", "message": {"message": "AudioAdded", "seq_no": 130}}
+{"received_at": "2026-09-16T18:30:52.274675", "message": {"message": "AudioAdded", "seq_no": 131}}
+{"received_at": "2026-09-16T18:30:52.530995", "message": {"message": "AudioAdded", "seq_no": 132}}
+{"received_at": "2026-09-16T18:30:52.531022", "message": {"message": "AudioAdded", "seq_no": 133}}
+{"received_at": "2026-09-16T18:30:52.531031", "message": {"message": "AudioAdded", "seq_no": 134}}
+{"received_at": "2026-09-16T18:30:52.786121", "message": {"message": "AudioAdded", "seq_no": 135}}
+{"received_at": "2026-09-16T18:30:52.786138", "message": {"message": "AudioAdded", "seq_no": 136}}
+{"received_at": "2026-09-16T18:30:53.042848", "message": {"message": "AudioAdded", "seq_no": 137}}
+{"received_at": "2026-09-16T18:30:53.042880", "message": {"message": "AudioAdded", "seq_no": 138}}
+{"received_at": "2026-09-16T18:30:53.042914", "message": {"message": "SpeechEnded", "metadata": {"end_time": 13.79}}}
+{"received_at": "2026-09-16T18:30:53.042983", "message": {"message": "StartOfTurn", "metadata": {"start_time": 11.62}}}
+{"received_at": "2026-09-16T18:30:53.043004", "message": {"message": "AudioAdded", "seq_no": 139}}
+{"received_at": "2026-09-16T18:30:53.298652", "message": {"message": "AudioAdded", "seq_no": 140}}
+{"received_at": "2026-09-16T18:30:53.298690", "message": {"message": "SpeechStarted", "metadata": {"start_time": 13.95}}}
+{"received_at": "2026-09-16T18:30:53.426367", "message": {"message": "AudioAdded", "seq_no": 141}}
+{"received_at": "2026-09-16T18:30:53.426385", "message": {"message": "AudioAdded", "seq_no": 142}}
+{"received_at": "2026-09-16T18:30:53.426390", "message": {"message": "AudioAdded", "seq_no": 143}}
+{"received_at": "2026-09-16T18:30:53.568390", "message": {"message": "AudioAdded", "seq_no": 144}}
+{"received_at": "2026-09-16T18:30:53.568420", "message": {"message": "AudioAdded", "seq_no": 145}}
+{"received_at": "2026-09-16T18:30:53.570435", "message": {"message": "AudioAdded", "seq_no": 146}}
+{"received_at": "2026-09-16T18:30:53.570461", "message": {"message": "AudioAdded", "seq_no": 147}}
+{"received_at": "2026-09-16T18:30:53.570473", "message": {"message": "SpeechEnded", "metadata": {"end_time": 14.59}}}
+{"received_at": "2026-09-16T18:30:53.572448", "message": {"message": "AudioAdded", "seq_no": 148}}
+{"received_at": "2026-09-16T18:30:53.585514", "message": {"message": "AudioAdded", "seq_no": 149}}
+{"received_at": "2026-09-16T18:30:53.737496", "message": {"message": "AddSegment", "segment": {"transcript": "Sí, correcto. Muchas gracias. Hasta luego.", "speaker": "S1"}, "metadata": {"start_time": 11.62, "end_time": 14.7}}}
+{"received_at": "2026-09-16T18:30:53.737596", "message": {"message": "EndOfTurn", "metadata": {"end_time": 14.7}}}
+{"received_at": "2026-09-16T18:30:53.737625", "message": {"message": "EndOfTranscript"}}

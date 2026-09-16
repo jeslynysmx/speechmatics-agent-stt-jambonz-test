@@ -70,23 +70,6 @@ Note the granularity: segments are **turns, not sentences**. The last one holds
 three sentences. If your downstream consumes sentences, that is a design change,
 not a drop-in.
 
-## Findings (preview endpoint, 16 Sep 2026)
-
-Reproducible with the tools here:
-
-- **`punctuation_overrides` is ignored.** It appears in the published config
-  list, but the service answers `Field transcription_config.punctuation_overrides
-  is not valid config for this session and was ignored`. Same result sending
-  `permitted_marks` alone, `sensitivity` alone, or both. There is currently no
-  punctuation control on this API.
-- **`additional_vocab` is accepted** without a warning, though it is not in the
-  published list. Whether it actually biases recognition is untested — the
-  bundled clip is recognised correctly without it, so it cannot discriminate.
-- `domain`, `output_locale` and `diarization` are all accepted.
-- `/v2/agent` is served on `preview.`, `global.` and `us.` `rt.speechmatics.com`.
-
-Run `probe-config-fields.py` to re-check any of this — it is a preview endpoint
-and these answers have a shelf life.
 
 ## Through jambonz
 

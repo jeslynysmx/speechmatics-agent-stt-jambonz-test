@@ -1,8 +1,8 @@
 # Speechmatics Agent STT — test harness
 
 A small rig for exercising Speechmatics' **Agent STT** API (`model: linden-1`,
-`wss://preview.rt.speechmatics.com/v2/agent`), both on its own and through a telephony stack such as
-jambonz, so the two can be compared on identical audio.
+`wss://preview.rt.speechmatics.com/v2/agent`), both on its own and through a
+telephony stack such as jambonz, so the two can be compared on identical audio.
 
 Agent STT is a **different API** from the classic real-time one, not a mode of
 it. It emits `AddSegment` — a speaker-attributed transcript string with start
@@ -14,6 +14,16 @@ Two things are required together, and missing either gives you the **classic RT
 API back with no error**: the `/v2/agent` path, and `model: "linden-1"` in
 `transcription_config`. That failure mode is quiet and costs an afternoon, so
 `--probe` checks it explicitly.
+
+## Two legs
+
+| | |
+| --- | --- |
+| **This directory** | Straight to the Speechmatics API, no telephony. Needs only your API key, Python and ffmpeg. Start here — it gives you the control to compare everything else against. |
+| [`jambonz-app/`](jambonz-app/) | A jambonz websocket app and a SIP injector, so the same audio goes through a real SIP call into jambonz and out to Speechmatics. Needs a jambonz account you can configure, plus sipp and a tunnel. |
+
+Running both on the same clip is what makes a difference attributable: if the
+transcript changes between the two, the telephony path did it.
 
 ## Quick start
 
@@ -37,7 +47,7 @@ a live call would deliver it.
 | | |
 | --- | --- |
 | `agent_stt_harness.py` | Streams audio to Agent STT and captures every message verbatim to `.raw.jsonl`, plus a readable log. `--probe` for a handshake-only check, `--convert` to re-render a saved capture without touching the API. |
-| `probe-config-fields.py` | Opens one session per `transcription_config` field and reports which are honoured and which come back ignored. The published config list and the deployed preview service do not entirely agree. |
+| `probe-config-fields.py` | Opens one session per `transcription_config` field and reports which the service accepts. A field it does not support is reported once, in a `Warning` frame at session start, and then ignored silently — easy to miss, and easy to mistake for a model quirk later. |
 | `inspect-jambonz-capture.py` | Reads a capture taken from a telephony stack, prints every message type and payload shape, and digs out segments wherever they are nested. Use it when you do not yet know what shape the integration forwards. |
 
 ## Sample
@@ -69,7 +79,6 @@ python3 agent_stt_harness.py --convert samples/sample-es-reservation.agent-stt.r
 Note the granularity: segments are **turns, not sentences**. The last one holds
 three sentences. If your downstream consumes sentences, that is a design change,
 not a drop-in.
-
 
 ## Through jambonz
 

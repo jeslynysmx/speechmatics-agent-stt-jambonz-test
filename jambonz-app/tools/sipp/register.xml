@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario SYSTEM "sipp.dtd">
+
+<!--
+  Register a SIP user (created in the jambonz portal under SIP Users) to the
+  account's SIP realm. The binding outlives this process, so register once and
+  then run inject-audio.xml from the SAME local port (-p) so the Contact in the
+  registration still matches where the call comes from.
+
+  See the note in inject-audio.xml about [authentication] emitting its own
+  header name.
+-->
+<scenario name="jambonz register">
+
+  <send retrans="500">
+    <![CDATA[
+
+      REGISTER sip:[realm] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: <sip:[field0]@[realm]>;tag=[call_number]
+      To: <sip:[field0]@[realm]>
+      Call-ID: [call_id]
+      CSeq: 1 REGISTER
+      Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+      Max-Forwards: 70
+      Expires: 3600
+      User-Agent: sipp-speechmatics-injector
+      Content-Length: 0
+
+    ]]>
+  </send>
+
+  <recv response="100" optional="true"/>
+  <recv response="401" auth="true" optional="true" next="challenged"/>
+  <recv response="407" auth="true" optional="true" next="challenged"/>
+  <recv response="200" next="done"/>
+
+  <label id="challenged"/>
+  <send retrans="500">
+    <![CDATA[
+
+      REGISTER sip:[realm] SIP/2.0
+      Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
+      From: <sip:[field0]@[realm]>;tag=[call_number]
+      To: <sip:[field0]@[realm]>
+      Call-ID: [call_id]
+      CSeq: 2 REGISTER
+      Contact: <sip:[field0]@[local_ip]:[local_port];transport=[transport]>
+      [authentication]
+      Max-Forwards: 70
+      Expires: 3600
+      User-Agent: sipp-speechmatics-injector
+      Content-Length: 0
+
+    ]]>
+  </send>
+  <recv response="100" optional="true"/>
+  <recv response="200"/>
+
+  <label id="done"/>
+
+</scenario>

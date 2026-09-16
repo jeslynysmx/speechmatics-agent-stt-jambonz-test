@@ -1,0 +1,21 @@
+{
+  "_notes": [
+    "Copy to recognizer-overrides.json to change recognizer settings between",
+    "calls without restarting the app — the file is re-read on every call, which",
+    "is how tools/sweep-max-delay.sh runs the matrix.",
+    "",
+    "Keys are the camelCase names from lib/recognizer-config.js, not the",
+    "Speechmatics wire names. Anything omitted keeps its built-in default.",
+    "",
+    "transcriptFiltering requires jambonz v11+ — older instances reject",
+    "rejects transcript_filtering_config, which is why they normalize time",
+    "formats client-side after the webhook instead."
+  ],
+  "maxDelay": 2.0,
+  "eouSilence": 0.7,
+  "enableEntities": true,
+  "transcriptFiltering": false,
+  "replacements": [
+    {"from": "(\\d{1,2})h(\\d{2})", "to": "$1:$2"}
+  ]
+}

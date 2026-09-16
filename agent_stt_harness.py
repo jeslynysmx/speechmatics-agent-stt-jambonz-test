@@ -10,15 +10,15 @@ the RT API therefore finds nothing here, which is why this is a separate
 harness rather than a flag.
 
 Things worth knowing before you compare captures:
-  - the endpoint is wss://<host>/v2/agent, and BOTH the /agent path and
-    model=linden-1 are required. Miss either and you silently get the classic
-    RT API back, which looks like a bug in your analysis rather than your config
+  - the endpoint is wss://preview.rt.speechmatics.com/v2/agent, and BOTH the
+    /agent path and model=linden-1 are required. Miss either and you silently
+    get the classic RT API back, which looks like a bug in your analysis rather
+    than your config
   - 16 kHz pcm_s16le only
   - no max_delay / max_delay_mode, no enable_entities, no conversation_config;
     turn-taking is EndOfTurn, not EndOfUtterance
-  - punctuation_overrides is listed in the docs but the preview service replies
-    "not valid config for this session and was ignored" (see
-    probe-config-fields.py, which checks this and other fields for you)
+  - it is a preview API, so check what your session actually accepts rather than
+    assuming — probe-config-fields.py reports that per field
 
 --check answers one practical question: did a phrase that belongs together stay
 inside a single segment? A comma turning into a sentence break is the failure

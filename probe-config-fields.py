@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """
-Which transcription_config fields does Agent STT actually honour?
+Which transcription_config fields does this Agent STT session accept?
 
-The published config list and the deployed preview service do not entirely
-agree, and a field that is ignored is ignored silently apart from one Warning
-frame at session start — easy to miss, and easy to mistake for a model quirk
-later. This opens one session per field and reports what came back.
+Agent STT is a preview API and its supported configuration is still moving. A
+field the service does not support is reported once, in a Warning frame at
+session start, and then ignored silently — easy to miss in a stream of
+transcripts, and easy to mistake for a model quirk later. This opens one
+session per field and reports what came back for each.
 
 Nothing is streamed; each session is a StartRecognition and a verdict.
 

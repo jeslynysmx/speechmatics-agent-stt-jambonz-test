@@ -1,0 +1,23 @@
+{
+  "_notes": [
+    "additional_vocab sent to Speechmatics verbatim. This matters because",
+    "jambonz `hints` are NOT forwarded to Speechmatics — if you want vocabulary",
+    "bias you have to send it here explicitly.",
+    "",
+    "Entries may be plain strings or {content, sounds_like} objects. Replace",
+    "these with terms your own audio actually contains; the list below is a",
+    "restaurant-booking example to match the bundled Spanish sample."
+  ],
+  "additional_vocab": [
+    {"content": "Acme Bistro", "sounds_like": ["Acme Bistrot"]},
+    {"content": "reserva"},
+    {"content": "comensales"},
+    {"content": "terraza"},
+    {"content": "vegano"},
+    {"content": "vegetariano"},
+    {"content": "intolerante a la lactosa"},
+    {"content": "celíaco"},
+    {"content": "alérgeno"},
+    {"content": "trona"}
+  ]
+}

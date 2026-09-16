@@ -5,6 +5,14 @@
 *.log.txt
 !samples/*.raw.jsonl
 
+# SIP credentials for the injector. Never commit this.
+.env.injector
+.env
+
+jambonz-app/captures/
+jambonz-app/node_modules/
+node_modules/
+
 __pycache__/
 *.pyc
-.env
+*.pcap

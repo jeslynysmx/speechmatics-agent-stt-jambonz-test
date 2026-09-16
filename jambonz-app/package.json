@@ -1,0 +1,25 @@
+{
+  "name": "my-speechmatics-test",
+  "version": "0.0.1",
+  "description": "jambonz websocket application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "jslint": "eslint app.js lib"
+  },
+  "comment:overrides": "node-client-ws pins @jambonz/verb-specifications ^0.0.121, whose validator rejects speechmatics conversation_config (end_of_utterance_silence_trigger) and the newer profile/host options. 0.1.x accepts them.",
+  "overrides": {
+    "@jambonz/verb-specifications": "^0.1.13"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@jambonz/node-client-ws": "^0.2.13",
+    "express": "^5.2.1",
+    "pino": "^10.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^10.8.1",
+    "eslint-plugin-promise": "^7.3.0"
+  }
+}

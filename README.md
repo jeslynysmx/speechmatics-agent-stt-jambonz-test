@@ -1,7 +1,7 @@
 # Speechmatics Agent STT — test harness
 
 A small rig for exercising Speechmatics' **Agent STT** API (`model: linden-1`,
-`wss://<host>/v2/agent`), both on its own and through a telephony stack such as
+`wss://preview.rt.speechmatics.com/v2/agent`), both on its own and through a telephony stack such as
 jambonz, so the two can be compared on identical audio.
 
 Agent STT is a **different API** from the classic real-time one, not a mode of
